@@ -9,9 +9,15 @@ export default function NavBar() {
   return (
     <div className='Navbar'>
       <div className='icons-container'>
-        <img src={htmlLogo} alt="Icono HTML" className='icon icon-html' />
-        <img src={cssLogo} alt="Icono CSS3" className='icon icon-css' />
-        <img src={jsLogo} alt="Icono de JavaScript" className='icon icon-js' />
+        <div className="icon-html icon">
+          <img src={htmlLogo} alt="Icono HTML" />
+        </div>
+        <div className="icon-css icon">
+          <img src={cssLogo} alt="Icono CSS3" />
+        </div>
+        <div className="icon-js icon">
+          <img src={jsLogo} alt="Icono de JavaScript" />
+        </div>
       </div>
       <nav className='Navbar-links'>
         <ul>
