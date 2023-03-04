@@ -1,0 +1,12 @@
+@import 'vars';
+
+.Social-network {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  padding: 1rem;
+
+  a:hover {
+    color: $light-blue;
+  }
+}

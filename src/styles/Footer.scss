@@ -1,0 +1,55 @@
+@import 'vars';
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #C9BBBB;
+  font-family: $font;
+  border-radius: 0 0 8px 8px;
+
+  .Footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    .Footer-description {
+      padding: 0 1rem;
+      width: 40%;
+    }
+
+    .Footer-project {
+      padding: 0 1rem;
+      width: 40%;
+    }
+
+    .Footer-navigation {
+      padding: 0 1rem;
+      width: 20%;
+      box-sizing: border-box;
+
+      .Links {
+        ul {
+          list-style: none;
+          padding: 0;
+
+          a {
+            text-decoration: none;
+            margin-bottom: 0.3rem;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .Footer-separator {
+    width: 95%;
+    height: 2px;
+    margin: 0 1rem;
+    background-color: #AA9D9D;
+  }
+
+
+
+}
