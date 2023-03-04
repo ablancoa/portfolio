@@ -1,7 +1,9 @@
+@import 'vars';
+
 .Header-container {
   display: flex;
-  background-image: linear-gradient(to right top, #1673ff, #4663c9, #4d5496, #484767, #3b3b3b);
-  color: white;
+  font-family: 'Nunito';
+  color: $base-color;
   min-height: 350px;
   justify-content: space-between;
   align-items: center;
@@ -10,35 +12,48 @@
 }
 
 .Header-image {
-  position: absolute;
-  right: 150px;
-  top: 30px;
-  width: 400px;
+  position: relative;
+  min-width: 360px;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 
-  .headerMan {
-    width: 300px;
+  .myImage {
     position: absolute;
-    top: 100px;
     z-index: 1;
-    transition: 1s;
   }
 
-  .headerBackground {
-    width: 300px;
+  .codeSnippet {
     position: absolute;
+    z-index: 3;
+    left: 0;
   }
 
-  .headerText {
-    width: 300px;
+  .codeSnippet1 {
     position: absolute;
-    top: -300px;
-    transition: 1s;
-  }
-}
-
-.Header-image:hover {
-  .headerText {
-    top: 0;
+    z-index: 3;
+    right: 0;
   }
 
+  .apiIcon {
+    position: absolute;
+    top: 45px;
+    right: 90px;
+    z-index: 0;
+  }
+
+  .component {
+    position: absolute;
+    top: 164px;
+    right: 16px;
+    z-index: 2;
+  }
+
+  .searchBar {
+    position: absolute;
+    left: 16px;
+    top: 100px;
+    z-index: 3;
+  }
 }

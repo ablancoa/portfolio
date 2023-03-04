@@ -1,8 +1,9 @@
+@import 'vars';
+
 .Layout {
   max-width: 1024px;
   width: 900px;
-  padding: 0.5rem;
   border-radius: 8px 8px 0 0;
-  background: linear-gradient(254deg, #1F2900 0%, #7A8FFF 98.79%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(254deg, $brow 0%, $light-blue 98.79%);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.45);
 }
