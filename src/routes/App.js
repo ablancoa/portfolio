@@ -9,7 +9,7 @@ import Contact from '../containers/Contact';
 import AboutMe from '../containers/AboutMe';
 import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
-import '../styles/App.css'
+import '../styles/App.scss'
 
 
 

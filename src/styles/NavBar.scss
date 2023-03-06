@@ -15,7 +15,10 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 0.5rem;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
 
     img {
       width: 0.8rem;
@@ -49,8 +52,12 @@
     align-items: center;
     background: linear-gradient(274.74deg, #1F2900 9.22%, $brow 29.61%, $light-blue 215.25%);
     height: 100%;
-    width: 40%;
+    width: 350px;
     border-radius: 8px 8px 0 0;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
 
     ul {
       display: flex;
