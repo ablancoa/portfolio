@@ -1,0 +1,45 @@
+@import 'vars';
+
+.Header-Button {
+  color: $light-green;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  z-index: 1;
+
+  & div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & div a {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: $light-green;
+  }
+
+
+
+  &::before {
+    margin-left: auto;
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ECF5CE;
+    display: block;
+    transition: 0.5s;
+  }
+
+  &:hover::after,
+  &:hover::before {
+    width: 100%;
+  }
+
+}

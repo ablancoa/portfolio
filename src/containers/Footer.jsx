@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SocialMedia from './SocialMedia';
+import SocialMedia from '../components/SocialMedia';
 import '../styles/Footer.scss';
 
 export default function Footer() {

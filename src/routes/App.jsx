@@ -3,17 +3,22 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from '../containers/Home';
-import Portfolio from '../containers/Portfolio';
-import Contact from '../containers/Contact';
-import AboutMe from '../containers/AboutMe';
-import NotFound from '../containers/NotFound';
-import Layout from '../components/Layout';
+import Home from '../pages/Home';
+import Portfolio from '../pages/Portfolio';
+import Contact from '../pages/Contact';
+import AboutMe from '../pages/AboutMe';
+import NotFound from '../pages/NotFound';
+import Layout from '../containers/Layout';
+import Modal from '../containers/modal/Modal';
+import AppContext from '../context/AppContext';
+import useInitialState from '../context/useInitialState';
 import '../styles/App.scss'
 
 
 
 const App = () => {
+
+  const initialState = useInitialState()
 
   const router = createBrowserRouter([
     {
@@ -45,7 +50,10 @@ const App = () => {
 
   return (
     <div className='App'>
-      <RouterProvider router={router} />
+      <AppContext.Provider value={initialState} >
+        <RouterProvider router={router} />
+        <Modal />
+      </AppContext.Provider>
     </div>
   )
 }

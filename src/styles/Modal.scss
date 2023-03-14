@@ -1,0 +1,83 @@
+@import 'vars';
+
+.Modal {
+  background: rgba(32, 35, 41, .8);
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 2;
+
+  .Modal__content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: $base-color;
+    z-index: 3;
+
+
+    @media (max-width: 630px) {
+      height: 90%;
+      overflow-y: scroll;
+    }
+
+  }
+
+  .start-animation {
+    animation: traslateopen 0.5s linear;
+
+    @keyframes traslateopen {
+      0% {
+        transform: translateY(-300px);
+        opacity: 0;
+      }
+
+      50% {
+        transform: translateY(-150px);
+        opacity: 0.5;
+      }
+
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+
+  .close-animation {
+    animation: traslateclose 0.5s linear;
+
+    @keyframes traslateclose {
+      0% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+
+      50% {
+        transform: translateY(-150px);
+        opacity: 0.5;
+      }
+
+      100% {
+        transform: translateY(-300px);
+        opacity: 0;
+      }
+    }
+  }
+
+  @media (max-width: 630px) {
+    padding: 3rem 0;
+    overflow-y: scroll;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}

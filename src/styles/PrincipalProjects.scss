@@ -1,0 +1,66 @@
+@import 'vars';
+
+.Description-projects {
+  padding: 2rem;
+  display: flex;
+  min-height: 450px;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Nunito';
+  align-items: center;
+  color: $base_color;
+
+  &>h2 {
+    margin: 0;
+  }
+
+  &>p {
+    text-align: center;
+    width: 400px;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  .Principal-porjects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    &:first-child {
+      transform: rotate(180deg);
+    }
+
+    .Projects-container {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 900px) {
+        position: relative;
+        overflow-x: scroll;
+        scroll-snap-type: x proximity;
+        overscroll-behavior-x: contain;
+        width: 450px;
+        border-radius: 8px;
+        padding: 0;
+      }
+
+      @media (max-width: 780px) {
+        width: 300px;
+      }
+
+      @media (max-width: 630px) {
+        width: 180px;
+      }
+    }
+
+    .bracket-left {
+      transform: rotate(180deg);
+    }
+
+  }
+
+
+}

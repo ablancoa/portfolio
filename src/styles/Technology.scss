@@ -1,0 +1,30 @@
+.Technology-container {
+  background-color: #D9D9D9;
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+
+  .Technologies {
+    display: flex;
+    max-width: 650px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+
+    & img {
+      width: 80px;
+      height: 80px;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: none;
+      }
+
+      @media (max-width: 630px) {
+        filter: none;
+      }
+    }
+
+  }
+}

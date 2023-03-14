@@ -1,0 +1,68 @@
+@import 'vars';
+
+.Product-detail {
+  color: black;
+  font-family: $font;
+  margin-bottom: 1rem;
+
+  &>button {
+    border-radius: 6px;
+    background: linear-gradient(145deg, #e5e5e5, #ffffff);
+    box-shadow: 20px 20px 60px #d8d8d8,
+      -20px -20px 60px #ffffff;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+
+    & a {
+      font-family: $font;
+      text-decoration: none;
+      color: black;
+    }
+
+    &:hover {
+      background: linear-gradient(145deg, #ffffff, #e5e5e5);
+      box-shadow: 20px 20px 60px #d8d8d8,
+        -20px -20px 60px #ffffff;
+      transition: all 0.5s ease-in-out;
+    }
+
+    @media (max-width: 630px) {
+      width: 100%;
+    }
+  }
+
+  &>p {
+    margin-bottom: 1.5rem;
+  }
+
+  .Product-header {
+    display: flex;
+
+    &>img {
+      margin-right: 1rem;
+      border-radius: 6px;
+    }
+
+    .Technologies {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    p {
+      margin: 0 1rem 0 0;
+      padding: 0;
+
+    }
+
+    p::before {
+      content: "⭐";
+      margin-right: 5px;
+    }
+
+    @media (max-width: 630px) {
+      flex-direction: column;
+    }
+  }
+
+}

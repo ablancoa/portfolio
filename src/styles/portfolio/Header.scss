@@ -1,0 +1,31 @@
+@import '../vars';
+
+.Portfolio_header {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 450px;
+  font-family: $font;
+  color: $base-color;
+  padding: 1rem;
+
+  .Image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+
+  .Title {
+    width: 50%;
+    text-align: center;
+
+    @media (max-width:730px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width:730px) {
+    flex-direction: column-reverse;
+  }
+}
