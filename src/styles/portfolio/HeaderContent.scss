@@ -1,0 +1,12 @@
+@import '../vars';
+
+.Title {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+
+  @media (max-width:730px) {
+    width: 100%;
+  }
+}

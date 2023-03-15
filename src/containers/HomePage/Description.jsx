@@ -1,12 +1,13 @@
 import React from 'react';
 import { AdvancedImage } from '@cloudinary/react';
 import CoPresentRoundedIcon from '@mui/icons-material/CoPresentRounded';
+import { fill } from '@cloudinary/url-gen/actions/resize';
 import Button from '../../components/Button';
 import { cld } from '../../utils/cloudinary';
 
 export default function Description() {
 
-  const developerImage = cld.image('Portfolio/Developer_activity');
+  const developerImage = cld.image('Portfolio/Developer_activity-blue').resize(fill().width(400).height(400));
   return (
     <div className="Description">
       <AdvancedImage cldImg={developerImage} alt='developer image' />

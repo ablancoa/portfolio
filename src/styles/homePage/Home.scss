@@ -1,17 +1,21 @@
-@import 'vars';
+@import '../vars';
 
 .Home {
   .Description {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem;
+    padding: 2rem 3rem;
     font-family: $font;
     color: $base-color;
     margin-top: 1rem;
     margin-bottom: 1rem;
     min-height: 450px;
+
+    &>img {
+      max-width: 400px;
+      width: 50%;
+    }
 
     .Description-title {
       display: flex;
@@ -25,6 +29,7 @@
 
       & p {
         text-align: center;
+        min-width: 300px;
       }
 
       @media (max-width: 782px) {
@@ -34,6 +39,19 @@
 
     @media (max-width: 780px) {
       flex-direction: column-reverse;
+
+      &>img {
+        width: 400px;
+      }
+
+    }
+
+    @media (max-width: 400px) {
+      flex-direction: column-reverse;
+
+      &>img {
+        width: 100%;
+      }
 
     }
 

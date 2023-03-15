@@ -3,7 +3,7 @@ import { AdvancedImage } from '@cloudinary/react';
 import Card from '../../components/Card';
 import { cld } from '../../utils/cloudinary';
 import { data } from '../../data/database';
-import '../../styles/PrincipalProjects.scss'
+import '../../styles/homePage/PrincipalProjects.scss'
 
 export default function PrincipalProjects() {
 

@@ -5,11 +5,8 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(52deg, rgba(0, 0, 0, 1) 0%, rgba(77, 67, 67, 1) 46%);
-  background: -webkit-linear-gradient(52deg, rgba(0, 0, 0, 1) 0%, rgba(77, 67, 67, 1) 46%);
-  background: linear-gradient(52deg, rgba(0, 0, 0, 1) 0%, rgba(77, 67, 67, 1) 46%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#4d4343", GradientType=1);
+
+  background-image: url(../assets/images/pattern.svg);
 
   @media (max-width: 600px) {
     padding: 0;

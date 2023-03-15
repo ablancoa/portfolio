@@ -1,0 +1,95 @@
+.Header-title {
+  z-index: 1;
+
+  @media (max-width: 650px) {
+    width: 100%;
+  }
+}
+
+.Header-image {
+  position: relative;
+  min-width: 360px;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+
+  .myImage {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .codeSnippet {
+    position: absolute;
+    z-index: 3;
+    left: -10px;
+    animation: closedSnippet1 3s linear infinite;
+
+
+
+    @media (max-width: 350px) {
+      opacity: 0;
+    }
+  }
+
+  .codeSnippet1 {
+    position: absolute;
+    z-index: 3;
+    right: -10px;
+    animation: closedSnippet2 3s linear infinite;
+
+    @media (max-width: 350px) {
+      opacity: 0;
+    }
+  }
+
+  .apiIcon {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    z-index: 0;
+    animation: spin 3s linear infinite;
+
+  }
+
+
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes closedSnippet1 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes closedSnippet2 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(-15px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { technologies } from '../../data/technologies';
-import '../../styles/Technology.scss'
+import '../../styles/homePage/Technology.scss'
 
 export default function Technology() {
   return (

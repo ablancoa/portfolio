@@ -10,15 +10,16 @@ import vectorDown from '../assets/images/vectorDown.svg'
 import '../styles/portfolio/PortfolioImage.scss'
 
 export default function PortfolioImage() {
-  const projectImage = cld.image(`Portfolio/Website_Creator`).resize(fill().width(300).height(300));
+  const projectImage = cld.image(`Portfolio/Website_Creator-blue`).resize(fill().width(400).height(400));
   return (
-    <>
+    <div className="Image-container">
       <AdvancedImage cldImg={projectImage} className='images person' />
       <img src={engine} alt="engine" className='images cloud' />
       <img src={engrane1} alt="engine1" className='images engine1' />
       <img src={engrane2} alt="engine2" className='images engine2' />
       <img src={vectorUp} alt="vectorUp" className='images vectorUp' />
       <img src={vectorDown} alt="vectorDown" className='images vectorDown' />
-    </>
+    </div>
+
   )
 }

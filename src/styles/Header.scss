@@ -1,6 +1,8 @@
 @import 'vars';
 
 .Header-container {
+
+
   position: relative;
   display: flex;
   font-family: 'Nunito';
@@ -11,24 +13,20 @@
   padding: 2rem;
   text-align: center;
   overflow: hidden;
+  z-index: 0;
 
-  @media (max-width: 650px) {
+
+  @media (max-width: 700px) {
     flex-direction: column;
   }
 
-  .Header-title {
-    z-index: 1;
 
-    @media (max-width: 650px) {
-      width: 100%;
-    }
-  }
 
   .Header-crystal {
     position: absolute;
     border-radius: 50px;
-    background: linear-gradient(-254deg, #4b562f66 0%, #00c9d959 98.79%);
-    box-shadow: 10px 10px 60px #00abb814, -10px -10px 60px #00dbed;
+    background: linear-gradient(-254deg, $color5 20%, color2 98.79%);
+    box-shadow: 10px 10px 60px $color5, -10px -10px 60px $color2;
     z-index: 0;
   }
 
@@ -56,93 +54,4 @@
   }
 
 
-}
-
-
-.Header-image {
-  position: relative;
-  min-width: 360px;
-  height: 300px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
-
-  .myImage {
-    position: absolute;
-    z-index: 1;
-  }
-
-  .codeSnippet {
-    position: absolute;
-    z-index: 3;
-    left: 0;
-    animation: closedSnippet1 3s linear infinite;
-
-
-
-    @media (max-width: 350px) {
-      opacity: 0;
-    }
-  }
-
-  .codeSnippet1 {
-    position: absolute;
-    z-index: 3;
-    right: 0;
-    animation: closedSnippet2 3s linear infinite;
-
-    @media (max-width: 350px) {
-      opacity: 0;
-    }
-  }
-
-  .apiIcon {
-    position: absolute;
-    top: 55px;
-    right: 90px;
-    z-index: 0;
-    animation: spin 3s linear infinite;
-
-  }
-
-
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes closedSnippet1 {
-  0% {
-    transform: translateX(0px);
-  }
-
-  50% {
-    transform: translateX(15px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-@keyframes closedSnippet2 {
-  0% {
-    transform: translateX(0px);
-  }
-
-  50% {
-    transform: translateX(-15px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
 }

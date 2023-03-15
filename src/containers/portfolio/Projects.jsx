@@ -12,8 +12,8 @@ export default function Projects() {
   return (
     <div className='Projects'>
       {projects.map((project) => (
-        <div className='cards'>
-          <Card product={project} key={project.id} width={dimension.width} height={dimension.height} />
+        <div className='cards' key={project.id}>
+          <Card product={project} width={dimension.width} height={dimension.height} />
         </div>
       ))}
     </div>
