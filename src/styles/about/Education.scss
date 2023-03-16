@@ -1,0 +1,32 @@
+@import '../vars';
+
+.Education {
+
+  font-family: $font;
+  color: $base-color;
+  width: 45%;
+
+  & h3 {
+    margin: 0;
+  }
+
+
+  .Education_content {
+    display: flex;
+    align-items: center;
+
+    &>h2 {
+      padding: 0;
+      margin: 0.5rem 0;
+    }
+  }
+
+  .Education_item {
+    border-bottom: 2px solid $color3;
+    margin-bottom: 1rem;
+
+    & p {
+      margin: 0;
+    }
+  }
+}

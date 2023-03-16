@@ -1,0 +1,12 @@
+.Work {
+  width: 45%;
+
+  .Work_experience {
+    display: flex;
+    align-items: center;
+
+    &>h2 {
+      margin: 0.5rem 0;
+    }
+  }
+}

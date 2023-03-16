@@ -1,0 +1,49 @@
+@import '../vars';
+
+.Accordion {
+  border-bottom: 2px solid $color3;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 1rem;
+
+  .Accordion_Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &>svg {
+      transform: rotate(180deg);
+      transition: 0.3s linear;
+    }
+  }
+
+  .Active_svg>svg {
+    transform: rotate(0deg);
+    transition: 0.3s linear;
+  }
+
+
+  & h3 {
+    margin: 0;
+  }
+
+  & p {
+    margin: 0;
+
+  }
+
+  .Experience {
+    max-height: 0px;
+    height: 100%;
+    transition: 0.5s linear;
+
+  }
+
+  .Active {
+
+    max-height: 500px;
+    transition: 0.5s ease-in-out;
+
+  }
+
+}

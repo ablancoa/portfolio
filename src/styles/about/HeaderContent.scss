@@ -1,0 +1,26 @@
+.About {
+  display: flex;
+  z-index: 1;
+  text-align: left;
+  justify-content: space-around;
+  align-items: center;
+
+  &>img {
+    max-height: 390px;
+  }
+
+  @media (max-width:700px) {
+    flex-direction: column;
+  }
+
+
+  .Header-title {
+    width: 50%;
+    padding: 1rem;
+
+    @media (max-width:700px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
