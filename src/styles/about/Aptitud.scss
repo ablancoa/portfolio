@@ -1,0 +1,98 @@
+@import '../vars';
+
+
+.Aptitud_container {
+  width: 45%;
+
+  &>h2 {
+    margin: 0
+  }
+
+  .Aptitud {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+
+    & p {
+      margin: 5px 0;
+      width: 60%;
+    }
+
+    .Aptitud_porcent__container {
+      width: 150px;
+      height: 5px;
+      background-color: $base-color;
+      border-radius: 8px;
+
+      .Aptitud_porcent {
+        height: 5px;
+        border-radius: 8px;
+        background-color: $color5;
+      }
+    }
+  }
+
+  .Aptitud_download {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid $color3;
+    border-radius: 8px;
+    padding: 1rem;
+
+    &>p {
+      z-index: 1;
+      font-weight: bold;
+    }
+
+
+
+    .Download_button {
+      width: 100%;
+      height: 40px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #f77f00;
+      box-shadow: -19px 19px 38px #b95f00,
+        19px -19px 38px #ff9f00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &>a {
+        text-decoration: none;
+        font-family: $font;
+        color: $base-color;
+        font-size: 1rem;
+      }
+
+      &:hover {
+        transition: 1s linear;
+        background: linear-gradient(225deg, #ff8800, #de7200);
+        box-shadow: -19px 19px 38px #b95f00,
+          19px -19px 38px #ff9f00;
+      }
+
+      &:hover svg {
+        animation: translate 2s linear infinite;
+        animation-delay: 0.2s;
+      }
+
+      @keyframes translate {
+        0% {
+          transform: translateY(-10px);
+          opacity: 0;
+        }
+
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+}

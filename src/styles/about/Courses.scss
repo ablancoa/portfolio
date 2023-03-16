@@ -1,0 +1,28 @@
+.Courses {
+  width: 45%;
+
+  .Courses_title {
+    display: flex;
+    align-items: center;
+
+    &>h2 {
+      margin: 0.5rem 0;
+    }
+
+  }
+
+  .Courses_description {
+
+    .Course {
+      margin-bottom: 1rem;
+    }
+
+    & h3 {
+      margin: 0;
+    }
+
+    & p {
+      margin: 0;
+    }
+  }
+}

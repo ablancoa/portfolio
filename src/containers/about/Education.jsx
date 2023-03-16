@@ -11,7 +11,7 @@ export default function Education() {
         <h2>Mi educacion</h2>
       </div>
       {personalData.education.map((item) => (
-        <div className={`Education_item number${item.id}`}>
+        <div className={`Education_item number${item.id}`} key={item.id}>
           <h3>{item.title}</h3>
           <p>{item.school}</p>
           <p>{item.periode}</p>

@@ -99,13 +99,50 @@ export const personalData = {
     }
   ],
   aptitudes: [
-    'HTML, CSS y JavaScript.',
-    'Librerías Bootstrap, SASS y otros.',
-    'ECMAScript 6+.',
-    'Librería React.',
-    'React Next y Native.',
-    'Dominio básico de Python.',
-    'Nivel principiante de JAVA.',
-    'Trabajo básico con Firebase',
+    {
+      id:1,
+      ability:'HTML, CSS.',
+      level:8,
+    },
+    {
+      id:2,
+      ability:'Librerías Bootstrap, SASS y otros.',
+      level:8,
+    },
+    {
+      id:3,
+      ability:'ECMAScript 6+.',
+      level:8,
+    },
+    {
+      id:4,
+      ability:'React.',
+      level:9,
+    },
+    {
+      id:5,
+      ability:'React Next.',
+      level:7,
+    },
+    {
+      id:6,
+      ability:'React Native.',
+      level:5,
+    },
+    // {
+    //   id:7,
+    //   ability:'Python.',
+    //   level:5,
+    // },
+    {
+      id:8,
+      ability:'Git y GitHub.',
+      level:6,
+    },
+    // {
+    // id:9  ,
+    //   ability:'Firebase',
+    //   level:4,
+    // },
   ]
 }
