@@ -1,0 +1,30 @@
+.Contact_Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+
+  .Contact_Header__Title {
+    min-width: 300px;
+    width: 40%;
+
+    @media (max-width:730px) {
+      width: 80%;
+      ;
+    }
+  }
+
+  .Contact_Header__Image {
+    width: 50%;
+    max-width: 400px;
+
+    // &>img {
+    //   width: 100%;
+    //   min-width: 280px;
+    // }
+  }
+
+  @media (max-width:730px) {
+    flex-direction: column;
+  }
+}
