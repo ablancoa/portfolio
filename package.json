@@ -5,6 +5,7 @@
   "dependencies": {
     "@cloudinary/react": "^1.11.0",
     "@cloudinary/url-gen": "^1.9.1",
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.11",
@@ -16,7 +17,8 @@
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
     "sass": "^1.58.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

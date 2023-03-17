@@ -1,12 +1,13 @@
 .Contact_Header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 1;
 
   .Contact_Header__Title {
     min-width: 300px;
     width: 40%;
+    text-align: left;
 
     @media (max-width:730px) {
       width: 80%;

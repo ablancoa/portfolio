@@ -1,0 +1,131 @@
+@import 'vars';
+
+.Contact_Social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+
+  &>h3 {
+    text-align: center;
+  }
+
+  &>p {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .SendIcon>svg {
+    animation: sendIcon 1.2s ease-in-out infinite;
+  }
+
+
+  .ErrorIcon>svg {
+    animation: error 0.1s ease-in-out;
+    animation-iteration-count: 3;
+  }
+
+  .DoneIcon {
+    animation: success 1.5s ease-in infinite;
+  }
+}
+
+
+.Circle_container {
+  display: flex;
+
+  &>div {
+    width: 5px;
+    height: 10px;
+    margin: 1rem 7px;
+    background-color: $base-color;
+    border-radius: 50%;
+
+    &:nth-child(1) {
+      animation: upCircle 1.2s linear infinite;
+    }
+
+    &:nth-child(2) {
+      animation: upCircle 1.2s linear infinite;
+      animation-delay: 0.4s;
+    }
+
+    &:nth-child(3) {
+      animation: upCircle 1.2s linear infinite;
+      animation-delay: 0.8s
+    }
+  }
+
+}
+
+@keyframes sendIcon {
+  0% {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+}
+
+@keyframes upCircle {
+  0% {
+    transform: translateY(0);
+
+  }
+
+  15% {
+    transform: translateY(-10px);
+  }
+
+  33% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes error {
+  0% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes success {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  5% {
+    transform: rotate(-25deg);
+  }
+
+  10% {
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(25deg);
+  }
+
+  20% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+}
