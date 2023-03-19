@@ -16,7 +16,6 @@ export default function LoaderEmail({ status }) {
       )
       }
 
-
       {status === 'loading' && (
         <div className='Contact_Social'>
           <div className='SendIcon'>
@@ -32,7 +31,6 @@ export default function LoaderEmail({ status }) {
       )
       }
 
-
       {status === 'success' && (
         <div className='Contact_Social'>
           <div className='DoneIcon'>
@@ -42,7 +40,6 @@ export default function LoaderEmail({ status }) {
         </div>
       )
       }
-
 
       {status === 'error' && (
         <div className='Contact_Social'>
@@ -55,6 +52,5 @@ export default function LoaderEmail({ status }) {
       )
       }
     </>
-
   )
 }
