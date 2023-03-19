@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { AdvancedImage } from '@cloudinary/react';
 import { placeholder } from '@cloudinary/react';
 import { byRadius } from '@cloudinary/url-gen/actions/roundCorners';
 import { cld } from '../../utils/cloudinary';
+import { useObserver } from '../../hooks/useObserver'
 import '../../styles/about/HeaderContent.scss'
 
 export default function HeaderContent() {
+  const animationRef = useRef();
+  const animation = useObserver(animationRef, "HeaderAboutAnimation")
 
   const image = cld.image("Portfolio/Buena").roundCorners(byRadius(8))
   return (
-    <div className='About'>
+    <div className={`About ${animation}`} ref={animationRef}>
       <AdvancedImage cldImg={image} plugins={[placeholder()]} />
       <div className="Header-title">
         <h2>

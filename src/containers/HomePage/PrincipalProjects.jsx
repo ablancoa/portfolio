@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { AdvancedImage } from '@cloudinary/react';
 import Card from '../../components/Card';
 import { cld } from '../../utils/cloudinary';
+import { useObserver } from '../../hooks/useObserver';
 import { data } from '../../data/database';
 import '../../styles/homePage/PrincipalProjects.scss'
 
 export default function PrincipalProjects() {
+  const descriptionContainer = useRef();
+  const animation = useObserver(descriptionContainer, "EntreyAnimationUp", 0.5)
 
   const codeBracket = cld.image('Portfolio/code_brackets1');
   const projects = [...data.data];
@@ -16,7 +19,7 @@ export default function PrincipalProjects() {
   }
 
   return (
-    <div className="Description-projects">
+    <div className={`Description-projects ${animation}`} ref={descriptionContainer}>
       <h2>Principales Proyectos</h2>
       <p>A cada proyecto le dedico lo mejor de mi, lo asumo como si fuera propio y lo desarrollo simpre dando mi mejor esfuerzo</p>
       <div className="Principal-porjects">

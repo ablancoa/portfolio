@@ -12,7 +12,7 @@ export default function Aptitud() {
           <div className="Aptitud" key={item.id}>
             <p>{item.ability}</p>
             <div className='Aptitud_porcent__container'>
-              <div className='Aptitud_porcent' style={{ width: (item.level * 15) }}></div>
+              <div className='Aptitud_porcent' style={{ maxWidth: (item.level * 15) }}></div>
             </div>
           </div>
         ))}

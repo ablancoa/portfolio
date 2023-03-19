@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { AdvancedImage } from '@cloudinary/react';
 import CoPresentRoundedIcon from '@mui/icons-material/CoPresentRounded';
 import { fill } from '@cloudinary/url-gen/actions/resize';
 import Button from '../../components/Button';
+import { useObserver } from '../../hooks/useObserver';
 import { cld } from '../../utils/cloudinary';
 
 export default function Description() {
 
+  const descriptionImageContainer = useRef()
+  const animation = useObserver(descriptionImageContainer, "EntryAnimationHomeDescription", 0.5)
+
   const developerImage = cld.image('Portfolio/Developer_activity-blue').resize(fill().width(400).height(400));
   return (
-    <div className="Description">
+    <div className={`Description ${animation}`} ref={descriptionImageContainer} >
       <AdvancedImage cldImg={developerImage} alt='developer image' />
       <div className="Description-title">
         <h2>Descripción</h2>

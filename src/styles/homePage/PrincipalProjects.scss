@@ -9,6 +9,7 @@
   font-family: 'Nunito';
   align-items: center;
   color: $base_color;
+  opacity: 0;
 
   &>h2 {
     margin: 0;
@@ -63,4 +64,9 @@
   }
 
 
+}
+
+.EntreyAnimationUp {
+  opacity: 1;
+  animation: transitionUp 0.5s ease-in-out
 }

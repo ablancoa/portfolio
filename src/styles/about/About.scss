@@ -6,6 +6,7 @@
   color: $base-color;
   padding: 2rem;
   justify-content: space-around;
+  opacity: 0;
 
   @media (max-width:550px) {
     flex-direction: column;
@@ -20,12 +21,14 @@
   }
 }
 
+
 .About_habilities {
   display: flex;
   font-family: $font;
   color: $base-color;
   padding: 2rem;
   justify-content: space-around;
+  opacity: 0;
 
   @media (max-width:550px) {
     flex-direction: column;
@@ -39,4 +42,41 @@
     }
   }
 
+}
+
+.AboutInformationAnimation,
+.AboutHabilityAnimation {
+  opacity: 1;
+
+  &>div:nth-child(1) {
+    opacity: 1;
+    animation: transitionLeft 0.5s ease-in-out;
+  }
+
+  &>div:nth-child(2) {
+    opacity: 1;
+    animation: transitionRight 0.5s ease-in-out;
+  }
+
+  .Aptitud_porcent {
+    height: 5px;
+    border-radius: 8px;
+    background-color: $color5;
+    animation: growBar 1s ease-in;
+    width: 100%;
+  }
+
+  @keyframes growBar {
+    0% {
+      width: 0;
+    }
+
+    50% {
+      width: 0;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
 }

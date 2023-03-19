@@ -19,18 +19,14 @@
       width: 60%;
     }
 
-    .Aptitud_porcent__container {
-      width: 150px;
-      height: 5px;
-      background-color: $base-color;
-      border-radius: 8px;
 
-      .Aptitud_porcent {
-        height: 5px;
-        border-radius: 8px;
-        background-color: $color5;
-      }
-    }
+  }
+
+  .Aptitud_porcent__container {
+    width: 150px;
+    height: 5px;
+    background-color: $base-color;
+    border-radius: 8px;
   }
 
   .Aptitud_download {

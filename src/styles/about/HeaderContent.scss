@@ -6,6 +6,7 @@
   align-items: center;
 
   &>img {
+    opacity: 0;
     max-height: 390px;
   }
 
@@ -22,5 +23,17 @@
       width: 100%;
       text-align: center;
     }
+  }
+}
+
+.HeaderAboutAnimation {
+  &>img {
+    opacity: 1;
+    animation: transitionLeft 0.5s ease-in-out;
+  }
+
+  .Header-title {
+    opacity: 1;
+    animation: transitionRight 0.5s ease-in-out;
   }
 }

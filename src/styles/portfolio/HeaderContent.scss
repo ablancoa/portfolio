@@ -5,8 +5,14 @@
   text-align: center;
   position: relative;
   z-index: 3;
+  opacity: 0;
 
   @media (max-width:730px) {
     width: 100%;
   }
+}
+
+.HeaderPortfolioAnimation {
+  opacity: 1;
+  animation: transitionRight 0.5s ease-in-out;
 }
