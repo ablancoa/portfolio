@@ -60,23 +60,21 @@
 
   .Aptitud_porcent {
     height: 5px;
-    border-radius: 8px;
-    background-color: $color5;
     animation: growBar 1s ease-in;
     width: 100%;
   }
 
   @keyframes growBar {
     0% {
-      width: 0;
+      transform: scaleX(0);
     }
 
     50% {
-      width: 0;
+      transform: scaleX(0);
     }
 
     100% {
-      width: 100%;
+      transform: scaleX(100%);
     }
   }
 }

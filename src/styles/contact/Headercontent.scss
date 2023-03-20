@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-around;
   z-index: 1;
+  opacity: 0;
 
   .Contact_Header__Title {
     min-width: 300px;
@@ -27,5 +28,17 @@
 
   @media (max-width:730px) {
     flex-direction: column;
+  }
+}
+
+.HeaderAnimationEntry {
+  opacity: 1;
+
+  .Contact_Header__Title {
+    animation: transitionLeft 0.5s ease-in-out;
+  }
+
+  .Contact_Header__Image {
+    animation: transitionRight 0.5s ease-in-out;
   }
 }

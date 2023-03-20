@@ -27,6 +27,12 @@
     height: 5px;
     background-color: $base-color;
     border-radius: 8px;
+
+    .Aptitud_porcent {
+      border-radius: 8px;
+      background-color: $color5;
+      transform-origin: 0;
+    }
   }
 
   .Aptitud_download {

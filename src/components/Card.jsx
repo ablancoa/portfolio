@@ -32,7 +32,9 @@ export default function Card({ product, width, height }) {
         </div>
         <div className="card__content">
           <div className='Card-container' >
-            <AdvancedImage cldImg={projectImage} alt={product.name} plugins={[lazyload({ rootMargin: '10px 20px 10px 30px', threshold: 0.15 }), placeholder()]} />
+            <div className="Card-container_Image">
+              <AdvancedImage cldImg={projectImage} alt={product.name} plugins={[lazyload({ rootMargin: '10px 20px 10px 30px', threshold: 0.15 }), placeholder()]} />
+            </div>
 
             <h3>{product.name}</h3>
             {product.technology.slice(0, 3).map((item) => (

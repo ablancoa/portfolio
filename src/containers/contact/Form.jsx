@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
+import { useObserver } from '../../hooks/useObserver';
 import LoaderEmail from '../../components/LoaderEmail';
 import '../../styles/contact/Form.scss'
 
@@ -9,6 +10,9 @@ export default function Form() {
   const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
   const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
   const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+  const animationRef = useRef();
+  const animation = useObserver(animationRef, "FormAnimationEntry")
 
   const sendEmail = async (event) => {
     event.preventDefault();
@@ -36,7 +40,7 @@ export default function Form() {
   }
 
   return (
-    <div className='Contact_Container'>
+    <div className={`Contact_Container ${animation}`} ref={animationRef}>
       <form ref={form} className='Contact_Form' onSubmit={sendEmail}>
         <div className='Form_input'>
           <input id="name" type='text' required={true} name="user_name" onChange={handleChange} />

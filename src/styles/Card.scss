@@ -6,10 +6,12 @@
   transition: 0.5s linear;
   cursor: pointer;
 
-  & img {
-    border-radius: 6px;
-    border-bottom: 1px solid $base-color;
-    transition: 0.5s linear;
+  .Card-container_Image {
+    & img {
+      border-radius: 6px;
+      border-bottom: 1px solid $base-color;
+      transition: 0.5s linear;
+    }
   }
 
   & h3 {
@@ -42,6 +44,8 @@
 
   @media (min-width: 600px) {
     &:hover {
+      background-color: #645858;
+
       img {
         transform: translateY(-10px);
         transition: 0.3s linear;

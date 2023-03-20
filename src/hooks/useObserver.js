@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 export function useObserver(ref, className, threshold ){
 
   const [animation, setAnimation] = useState("")
 
-  const options = {
+  const options = useMemo(() =>  ({
     root: null,
     rootMargin: '50px',
     threshold: threshold || 0.3,
-  }
+  }),[threshold])
 
   useEffect(()=>{
     const observer = new IntersectionObserver(observerImage,options);
@@ -19,7 +19,7 @@ export function useObserver(ref, className, threshold ){
       intersect && setAnimation(className)
     }
 
-  },[ref])
+  },[ref, className, options])
   
   
 
