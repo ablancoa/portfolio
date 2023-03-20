@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import HelmetSEO from '../components/HelmetSEO';
 import Header from '../components/Header';
 import HeaderContent from '../containers/about/HeaderContent';
 import Separator from '../components/Separator'
@@ -15,8 +16,17 @@ export default function AboutMe() {
   const animationHabilityRef = useRef();
   const animationHability = useObserver(animationHabilityRef, "AboutHabilityAnimation");
 
+  const metaTag = {
+    title: "Mi Portafolio - Sobre mí",
+    siteName: "Mi Portafolio",
+    url: "/about",
+    description: "Acá conoceras la información más relevante sobre mi, estudios, experiencia laboral, cursos y otras aptitudes",
+    image: "https://res.cloudinary.com/dz3zwotvp/image/upload/v1679340727/Portfolio/RSSimage.png"
+  }
+
   return (
     <div>
+      <HelmetSEO title={metaTag.title} siteName={metaTag.siteName} description={metaTag.description} image={metaTag.image} url={metaTag.url} />
       <Header>
         <HeaderContent />
       </Header>

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-
+  min-height: 100vh;
   background-image: url(../assets/images/pattern.svg);
 
   @media (max-width: 600px) {

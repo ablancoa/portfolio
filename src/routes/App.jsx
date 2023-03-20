@@ -3,6 +3,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import Home from '../pages/Home';
 import Portfolio from '../pages/Portfolio';
 import Contact from '../pages/Contact';
@@ -17,7 +18,7 @@ import '../styles/App.scss'
 
 
 const App = () => {
-
+  const helmetContext = {}
   const initialState = useInitialState()
 
   const router = createBrowserRouter([
@@ -49,12 +50,14 @@ const App = () => {
 
 
   return (
-    <div className='App'>
-      <AppContext.Provider value={initialState} >
-        <RouterProvider router={router} />
-        <Modal />
-      </AppContext.Provider>
-    </div>
+    <HelmetProvider context={helmetContext}>
+      <div className='App'>
+        <AppContext.Provider value={initialState} >
+          <RouterProvider router={router} />
+          <Modal />
+        </AppContext.Provider>
+      </div>
+    </HelmetProvider>
   )
 }
 

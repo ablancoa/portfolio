@@ -1,0 +1,11 @@
+@import '../vars';
+
+.NotFound {
+  border-radius: 8px;
+  background-color: $color3;
+  padding: 2rem;
+  font-family: $font;
+  color: $base-color;
+  display: grid;
+  place-items: center;
+}
