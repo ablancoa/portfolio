@@ -19,7 +19,7 @@ export default function ProductDetail({ product }) {
           </div>
         </div>
       </div>
-      <h3>Descripcion del proyecto</h3>
+      <h3>Descripción del proyecto</h3>
       <p>{product.description}</p>
       {product.url && (<button><a href={product.url}>Ir al proyecto</a></button>)}
 

@@ -17,9 +17,9 @@ export default function Description() {
       <AdvancedImage cldImg={developerImage} alt='developer image' />
       <div className="Description-title">
         <h2>Descripción</h2>
-        <p> Graduado de Ingenieria electrica desde 2019 pero desde 2022 me adentre por completo en este maravilloso mundo de las tecnologias el cual siempre fue mi pasion y decidi dar el salto.
+        <p> Graduado de Ingeniería eléctrica desde 2019 pero desde 2022 me adentré por completo en este maravilloso mundo de las tecnologias, que siempre fue mi pasión y decidí dar el salto.
           Me apasiona aprender nuevas tecnologías y mantenerme actualizado en las últimas tendencias de desarrollo web para poder ofrecer soluciones innovadoras a mis clientes. Estoy emocionado por la oportunidad de trabajar en proyectos desafiantes y seguir creciendo como profesional en este campo en constante evolución.</p>
-        <Button iconComponent={CoPresentRoundedIcon} text={`Conoceme`} urlToGo={`/about`} />
+        <Button iconComponent={CoPresentRoundedIcon} text={`Conóceme`} urlToGo={`/about`} />
       </div>
     </div>
   )

@@ -8,15 +8,16 @@
   color: $base-color;
   padding: 2rem;
 
+
   .Contact_Form {
     display: flex;
     flex-direction: column;
     width: 60%;
     padding: 1rem;
     border-radius: 8px;
-    background: #f77f00;
-    box-shadow: 20px -20px 60px #d26c00,
-      -20px 20px 60px #ff9200;
+    background: $color2;
+    box-shadow: 2px -2px 7px #d26c00,
+      -2px 2px 7px #ff9200;
     margin: 1rem;
     border: 2px solid $color3;
     opacity: 0;
@@ -87,9 +88,9 @@
       padding: 0.5rem;
       border-radius: 6px;
       cursor: pointer;
-      background: #f77f00;
-      box-shadow: -19px 19px 38px #b95f00,
-        19px -19px 38px #ff9f00;
+      background: $color5;
+      box-shadow: -2px 2px 7px #b95f00,
+        2px -2px 7px #ff9f00;
       color: $base-color;
       font-family: $font
     }
@@ -97,8 +98,8 @@
 
     button:active {
       background: linear-gradient(45deg, #de7200, #ff8800);
-      box-shadow: 20px -20px 60px #d26c00,
-        -20px 20px 60px #ff9200;
+      box-shadow: 3px -3px 8px #d26c00,
+        -3px 3px 8px #ff9200;
     }
 
     @media (max-width: 700px) {

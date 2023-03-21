@@ -8,6 +8,7 @@ const useInitialState = () => {
     setModal(!modal)
   }
 
+
   return {
     modal,
     setOpenModal,

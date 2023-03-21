@@ -9,7 +9,7 @@ export const personalData = {
     },
     {
       id: 2,
-      title: 'Magister en Eficiencia Energética y Sustentabilidad',
+      title: 'Mágister en Eficiencia Energética y Sustentabilidad',
       school: 'Universidad Tecnológica Metropolitana',
       periode: '2021-2023',
       country: 'Chile' 
@@ -27,10 +27,10 @@ export const personalData = {
     {
       id:1,
       title: 'Freelancer Proyecto de FONDART Regional',
-      place: 'Autonomo',
+      place: 'Autónomo',
       periode: '12/2022 - 03/2023',
       activities: [
-        'Diseño de una aplicación web para la visualización de los artistas para el proyecto "Memorias desplazadas y nuevos afectos, las poéticas de los artistas migrantes en chile".',
+        'Diseño de una aplicación web para la visualización de los artistas para el proyecto "Memorias desplazadas y nuevos afectos, las poéticas de los artistas migrantes en Chile".',
         'Maquetación y desarrollo de la aplicación mediante React Next.',
         'Creación de una PWA.',
         'Creación de base de datos para el almacenamiento de la información'
@@ -44,7 +44,7 @@ export const personalData = {
       periode: '11/2022 - 04/2023',
       activities: [
         'Creación de DAG en Apache Airflow mediante Python para la obtención de datos diarios.',
-        'Crear conexion con bases las bases de datos, InfluxDB y Directus para el almacenamiento de las mediciones.'
+        'Crear conexión con bases las bases de datos, InfluxDB y Directus para el almacenamiento de las mediciones.'
       ],
       country: 'Chile'
     },

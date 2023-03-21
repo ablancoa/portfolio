@@ -11,7 +11,7 @@ export default function LoaderEmail({ status }) {
       {status === 'empty' && (
         <div className='Contact_Social'>
           <h2>Espero tus mensajes 😉</h2>
-          <p>Muchas gracias por haberte interesado en mi, espero con ansias su mensaje</p>
+          <p>Muchas gracias por haberte interesado en mí, espero con ansias su mensaje</p>
         </div >
       )
       }

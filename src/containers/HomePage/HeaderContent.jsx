@@ -19,9 +19,9 @@ export default function HeaderContent() {
   return (
     <>
       <div className={`Header-title ${animation}`} ref={imageContainer}>
-        <h1>Hola, soy Alexander Blanco</h1>
+        <h1>Hola, soy <div>Alexander Blanco</div></h1>
         <p>“Soy un desarrollador web front-end apasionado por la creación de soluciones creativas y efectivas para proyectos en línea. Con experiencia en HTML, CSS, JavaScript y frameworks como React, React Next y React Native"</p>
-        <Button iconComponent={SendRoundedIcon} text={`Contactame`} urlToGo={`/contact`} />
+        <Button iconComponent={SendRoundedIcon} text={`Contáctame`} urlToGo={`/contact`} />
       </div>
       <div className={`Header-image`} >
         <AdvancedImage cldImg={portadaImage} className='myImage' />

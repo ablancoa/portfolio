@@ -6,6 +6,7 @@
   align-items: center;
   background-color: #C9BBBB;
   font-family: $font;
+  font-size: 14px;
   border-radius: 0 0 8px 8px;
 
   .Footer-container {
@@ -31,6 +32,11 @@
       padding: 0 1rem;
       width: 40%;
       box-sizing: border-box;
+
+
+      & a {
+        text-decoration: none;
+      }
 
       @media (max-width: 500px) {
         width: 100%;
@@ -61,6 +67,10 @@
             text-decoration: none;
             margin-bottom: 0.3rem;
             color: black;
+          }
+
+          a:hover {
+            color: $color1
           }
         }
       }

@@ -21,6 +21,9 @@ export default function Form() {
       await emailjs.sendForm(serviceID, templateID, form.current, publicKey)
         .then((result) => {
           console.log(result.text);
+          form.current[0].value = "";
+          form.current[1].value = "";
+          form.current[2].value = "";
           setSendingEmail('success');
         }, (error) => {
           console.log(error.text);

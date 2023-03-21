@@ -7,7 +7,7 @@ export default function Button({ iconComponent, urlToGo, text }) {
   return (
     <button type='button' className='Header-Button'>
       <div>
-        <Icon color='#ffffff' />
+        <Icon sx={{ color: '#e5e5e5' }} />
         <Link to={`${urlToGo}`}>{text}</Link>
       </div>
     </button>

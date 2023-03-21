@@ -8,7 +8,7 @@ export default function Work() {
   return (
     <div className='Work'>
       <div className='Work_experience'>
-        <WorkRoundedIcon sx={{ color: '#ffffff', marginRight: '5px' }} />
+        <WorkRoundedIcon sx={{ color: '#fca311', marginRight: '5px' }} />
         <h2>Experiencia laboral</h2>
       </div>
       {personalData.experience.map((item) => (

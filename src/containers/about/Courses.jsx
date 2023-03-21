@@ -7,7 +7,7 @@ export default function Courses() {
   return (
     <div className='Courses'>
       <div className='Courses_title'>
-        <HistoryEduIcon sx={{ color: '#ffffff', marginRight: '5px' }} />
+        <HistoryEduIcon sx={{ color: '#fca311', marginRight: '5px' }} />
         <h2>Cursos e idiomas</h2>
       </div>
       <div className="Courses_description">

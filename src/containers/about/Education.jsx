@@ -7,7 +7,7 @@ export default function Education() {
   return (
     <div className='Education'>
       <div className="Education_content">
-        <SchoolRoundedIcon sx={{ color: "#ffffff", marginTop: '5px', marginRight: '5px' }} />
+        <SchoolRoundedIcon sx={{ color: "#fca311", marginTop: '5px', marginRight: '5px' }} />
         <h2>Mi educacion</h2>
       </div>
       {personalData.education.map((item) => (

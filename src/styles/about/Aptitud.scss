@@ -5,7 +5,7 @@
   width: 45%;
 
   &>h2 {
-    margin: 0
+    margin: 0;
   }
 
   .Aptitud {
@@ -57,9 +57,9 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      background: #f77f00;
-      box-shadow: -19px 19px 38px #b95f00,
-        19px -19px 38px #ff9f00;
+      background: $color5;
+      box-shadow: -2px 2px 7px #b95f00,
+        2px -2px 7px #ff9f00;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -73,9 +73,9 @@
 
       &:hover {
         transition: 1s linear;
-        background: linear-gradient(225deg, #ff8800, #de7200);
-        box-shadow: -19px 19px 38px #b95f00,
-          19px -19px 38px #ff9f00;
+        background: linear-gradient(225deg, #ff8800, $color5);
+        box-shadow: -3px 3px 8px #b95f00,
+          3px -3px 8px #ff9f00;
       }
 
       &:hover svg {

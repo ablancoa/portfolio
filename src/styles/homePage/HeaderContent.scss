@@ -1,6 +1,13 @@
+@import '../vars';
+
 .Header-title {
   opacity: 0;
   z-index: 1;
+
+  & h1>div {
+    color: $color5;
+    display: inline-block;
+  }
 
   @media (max-width: 650px) {
     width: 100%;

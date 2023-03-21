@@ -11,6 +11,7 @@ import Separator from '../components/Separator';
 import '../styles/homePage/Home.scss'
 
 export default function Home() {
+
   const metaTag = {
     title: "Mi Portafolio - Home",
     siteName: "Mi Portafolio",

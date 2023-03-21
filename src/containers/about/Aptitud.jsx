@@ -20,7 +20,7 @@ export default function Aptitud() {
       <div className='Aptitud_download'>
         <p>Descargar CV en formato PDF</p>
         <button className='Download_button'>
-          <ArrowDownwardRoundedIcon sx={{ color: '#ffffff', marginRight: '15px' }} />
+          <ArrowDownwardRoundedIcon sx={{ color: '#fca311', marginRight: '15px' }} />
           <a href='https://drive.google.com/file/d/19F7ePhxgn5wvFW3yft3tucR4Fn-cWM-x/view?usp=share_link'>
             Descargar
           </a>
