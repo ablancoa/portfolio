@@ -9,7 +9,7 @@ import '../styles/SocialMedia.scss'
 export default function SocialMedia() {
   return (
     <div className="Social-network">
-      <Link to='https://github.com/ablancoa' >
+      <Link to='https://github.com/ablancoa'>
         <GitHubIcon alt="Github Icon" sx={{ color: "#000000" }} />
       </Link>
       <Link to='https://www.linkedin.com/in/alexander-blanco-amador/' >
