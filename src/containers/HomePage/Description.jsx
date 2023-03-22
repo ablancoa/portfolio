@@ -14,7 +14,7 @@ export default function Description() {
   const developerImage = cld.image('Portfolio/Developer_activity-blue').resize(fill().width(400).height(400));
   return (
     <div className={`Description ${animation}`} ref={descriptionImageContainer} >
-      <AdvancedImage cldImg={developerImage} alt='developer image' />
+      <AdvancedImage cldImg={developerImage} alt='developer image' width='50%' />
       <div className="Description-title">
         <h2>Descripción</h2>
         <p> Graduado de Ingeniería eléctrica desde 2019 pero desde 2022 me adentré por completo en este maravilloso mundo de las tecnologias, que siempre fue mi pasión y decidí dar el salto.
