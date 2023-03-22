@@ -30,7 +30,7 @@ export default function PrincipalProjects() {
             <Card key={item.id} product={item} width={dimensions.width} height={dimensions.height} />
           ))}
         </div>
-        <AdvancedImage cldImg={codeBracket} alt='bracket right' />
+        <AdvancedImage cldImg={codeBracket} alt='bracket right' width='94px' height='250px' />
       </div>
     </div>
   )
