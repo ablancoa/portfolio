@@ -24,7 +24,7 @@ export default function PrincipalProjects() {
       <h2>Principales Proyectos</h2>
       <p>A cada proyecto le dedico lo mejor de mí, lo asumo como si fuera propio y lo desarrollo simpre dando mi mejor esfuerzo</p>
       <div className="Principal-porjects">
-        <AdvancedImage cldImg={codeBracket} alt='bracket left' className='bracket-left' />
+        <AdvancedImage cldImg={codeBracket} alt='bracket left' className='bracket-left' width='94px' />
         <div className='Projects-container'>
           {projectToShow.map((item) => (
             <Card key={item.id} product={item} width={dimensions.width} height={dimensions.height} />

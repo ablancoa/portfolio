@@ -35,8 +35,6 @@
     }
 
     &>img {
-      width: 94px;
-
       @media (max-width: 300px) {
         display: none;
       }

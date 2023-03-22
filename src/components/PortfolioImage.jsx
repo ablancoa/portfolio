@@ -13,7 +13,7 @@ export default function PortfolioImage() {
   const projectImage = cld.image(`Portfolio/Website_Creator-blue`).resize(fill().width(400).height(400));
   return (
     <div className="Image-container">
-      <AdvancedImage cldImg={projectImage} className='images person' rel="preload" alt='Projects Image' />
+      <AdvancedImage cldImg={projectImage} className='images person' rel="preload" alt='Projects Image' width='100%' />
       <img src={engine} alt="engine" className='images cloud' rel="preload" />
       <img src={engrane1} alt="engine1" className='images engine1' rel="preload" />
       <img src={engrane2} alt="engine2" className='images engine2' rel="preload" />
