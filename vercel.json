@@ -1,13 +1,27 @@
 {
-  "headers": [
-    {
-      "source": "/about.js",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=604800"
-        }
-      ]
-    }
-  ]
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "vercel.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=604800"
+          }
+        ]
+      }
+    ]
+  }
 }

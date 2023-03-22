@@ -18,8 +18,6 @@
       margin: 5px 0;
       width: 60%;
     }
-
-
   }
 
   .Aptitud_porcent__container {
@@ -81,6 +79,12 @@
       &:hover svg {
         animation: translate 2s linear infinite;
         animation-delay: 0.2s;
+      }
+
+      @media (max-width: 720px) {
+        & svg {
+          display: none;
+        }
       }
 
       @keyframes translate {

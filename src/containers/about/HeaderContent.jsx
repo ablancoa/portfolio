@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, Suspense } from 'react';
 import { AdvancedImage } from '@cloudinary/react';
+import { quality } from '@cloudinary/url-gen/actions/delivery';
 import { placeholder } from '@cloudinary/react';
 import { byRadius } from '@cloudinary/url-gen/actions/roundCorners';
 import { cld } from '../../utils/cloudinary';
@@ -10,10 +11,13 @@ export default function HeaderContent() {
   const animationRef = useRef();
   const animation = useObserver(animationRef, "HeaderAboutAnimation")
 
-  const image = cld.image("Portfolio/Buena").roundCorners(byRadius(8))
+  const renderLoader = () => <p>Loader</p>
+  const image = cld.image("Portfolio/Buena").roundCorners(byRadius(8)).delivery(quality(100))
   return (
     <div className={`About ${animation}`} ref={animationRef}>
-      <AdvancedImage cldImg={image} plugins={[placeholder()]} />
+      <Suspense fallback={renderLoader()}>
+        <AdvancedImage cldImg={image} plugins={[placeholder()]} rel="preload" />
+      </Suspense>
       <div className="Header-title">
         <h2>
           Quién soy

@@ -14,11 +14,11 @@ export default function PortfolioImage() {
   return (
     <div className="Image-container">
       <AdvancedImage cldImg={projectImage} className='images person' rel="preload" alt='Projects Image' />
-      <img src={engine} alt="engine" className='images cloud' />
-      <img src={engrane1} alt="engine1" className='images engine1' />
-      <img src={engrane2} alt="engine2" className='images engine2' />
-      <img src={vectorUp} alt="vectorUp" className='images vectorUp' />
-      <img src={vectorDown} alt="vectorDown" className='images vectorDown' />
+      <img src={engine} alt="engine" className='images cloud' rel="preload" />
+      <img src={engrane1} alt="engine1" className='images engine1' rel="preload" />
+      <img src={engrane2} alt="engine2" className='images engine2' rel="preload" />
+      <img src={vectorUp} alt="vectorUp" className='images vectorUp' rel="preload" />
+      <img src={vectorDown} alt="vectorDown" className='images vectorDown' rel="preload" />
     </div>
 
   )

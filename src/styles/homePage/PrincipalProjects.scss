@@ -34,6 +34,14 @@
       transform: rotate(180deg);
     }
 
+    &>img {
+      width: 94px;
+
+      @media (max-width: 300px) {
+        display: none;
+      }
+    }
+
     .Projects-container {
       display: flex;
       justify-content: space-between;
@@ -48,12 +56,27 @@
         padding: 0;
       }
 
+      &>img {
+        width: 180px;
+        height: 100px;
+
+      }
+
       @media (max-width: 780px) {
         width: 300px;
       }
 
       @media (max-width: 630px) {
         width: 180px;
+
+        & .card {
+          transform: scale(0.85);
+
+          &>img {
+            scroll-snap-align: center;
+            margin: 0;
+          }
+        }
       }
     }
 

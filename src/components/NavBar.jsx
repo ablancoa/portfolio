@@ -13,10 +13,10 @@ export default function NavBar() {
           <img src={htmlLogo} alt="Icono HTML" width='13px' height='13px' />
         </div>
         <div className="icon-css icon">
-          <img src={cssLogo} alt="Icono CSS3" />
+          <img src={cssLogo} alt="Icono CSS3" width='13px' height='13px' />
         </div>
         <div className="icon-js icon">
-          <img src={jsLogo} alt="Icono de JavaScript" />
+          <img src={jsLogo} alt="Icono de JavaScript" width='13px' height='13px' />
         </div>
       </div>
       <nav className='Navbar-links'>

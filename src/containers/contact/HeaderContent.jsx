@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { AdvancedImage } from '@cloudinary/react';
+import { quality } from '@cloudinary/url-gen/actions/delivery';
 import { placeholder, responsive } from '@cloudinary/react';
 import { cld } from '../../utils/cloudinary';
 import { useObserver } from '../../hooks/useObserver';
@@ -9,7 +10,7 @@ export default function HeaderContent() {
   const animationRef = useRef();
   const animation = useObserver(animationRef, "HeaderAnimationEntry");
 
-  const image = cld.image('Portfolio/Content_structure');
+  const image = cld.image('Portfolio/Content_structure').delivery(quality(100));
   return (
     <div className={`Contact_Header ${animation}`} ref={animationRef}>
       <div className='Contact_Header__Title'>

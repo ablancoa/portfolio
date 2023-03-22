@@ -36,6 +36,10 @@
 
       @media (max-width: 782px) {
         width: 100%;
+
+        & p {
+          min-width: 280px;
+        }
       }
     }
 
