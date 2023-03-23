@@ -7,9 +7,9 @@ import Form from '../containers/contact/Form';
 
 export default function Contact() {
   const metaTag = {
-    title: "AlexDev - Contactame",
-    siteName: "AlexDev",
-    url: "http://www.alexdev.cl/contact",
+    title: "AlebaDev - Contactame",
+    siteName: "AlebaDev",
+    url: "http://www.alebadev.cl/contact",
     description: "Ponte en contacto conmigo, dejame saber si quieres que trabajemos juntos, duda o sugerencias que desees. Estaré atento ¡Contactame sin compromiso!",
   }
   return (

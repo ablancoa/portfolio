@@ -3,6 +3,7 @@
 .Header-title {
   opacity: 0;
   z-index: 1;
+  width: 50%;
 
   & h1>div {
     color: $color5;
@@ -16,17 +17,28 @@
 
 .Header-image {
   position: relative;
-  min-width: 360px;
-  height: 300px;
+  width: 50%;
+  max-width: 400px;
+  min-width: 280px;
+  height: 400px;
   align-items: center;
   display: flex;
   justify-content: center;
   opacity: 0;
 
+  @media (max-width: 650px) {
+    width: 100%;
+  }
 
   .myImage {
     position: absolute;
     z-index: 1;
+    width: 400px;
+
+    @media (max-width: 650px) {
+      width: 100%;
+    }
+
   }
 
   .codeSnippet {

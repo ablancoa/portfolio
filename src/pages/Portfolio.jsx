@@ -7,9 +7,9 @@ import Separator from '../components/Separator'
 
 export default function Portfolio() {
   const metaTag = {
-    title: "AlexDev - Proyectos",
-    siteName: "AlexDev",
-    url: "http://www.alexdev.cl/portfolio",
+    title: "AlebaDev - Proyectos",
+    siteName: "AlebaDev",
+    url: "http://www.alebadev.cl/portfolio",
     description: "Mis proyectos realizados con diferentes tecnologías, no dudes en consultarlos, visitarlos o ver si código, asi sabras que te puedo ayudar en el desarrollo de tus páginas",
   }
   return (

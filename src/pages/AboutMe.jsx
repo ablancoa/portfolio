@@ -17,9 +17,9 @@ export default function AboutMe() {
   const animationHability = useObserver(animationHabilityRef, "AboutHabilityAnimation");
 
   const metaTag = {
-    title: "AlexDev - Sobre mí",
-    siteName: "AlexDev",
-    url: "http://www.alexdev.cl/about",
+    title: "AlebaDev - Sobre mí",
+    siteName: "AlebaDev",
+    url: "http://www.alebadev.cl/about",
     description: "Acá conoceras la información más relevante sobre mi, estudios, experiencia laboral, cursos y otras aptitudes",
   }
 

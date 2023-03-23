@@ -13,9 +13,9 @@ import '../styles/homePage/Home.scss'
 export default function Home() {
 
   const metaTag = {
-    title: "AlexDev - Home",
-    siteName: "AlexDev",
-    url: "http://www.alexdev.cl/",
+    title: "AlebaDev - Home",
+    siteName: "AlebaDev",
+    url: "http://www.alebadev.cl/",
     description: "¿Buscas un desarrollador web front-end especializado en React? Entra en mi página web y descubre mis proyectos, quien soy y en que te puedo ayudar. ¡Contactame sin compromiso!",
   }
 
