@@ -18,7 +18,7 @@
 .Header-image {
   position: relative;
   width: 50%;
-  max-width: 400px;
+  max-width: 350px;
   min-width: 280px;
   height: 400px;
   align-items: center;
@@ -33,7 +33,7 @@
   .myImage {
     position: absolute;
     z-index: 1;
-    width: 400px;
+    width: 350px;
 
     @media (max-width: 650px) {
       width: 100%;
