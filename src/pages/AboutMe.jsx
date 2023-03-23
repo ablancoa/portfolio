@@ -19,7 +19,7 @@ export default function AboutMe() {
   const metaTag = {
     title: "Mi Portafolio - Sobre mí",
     siteName: "Mi Portafolio",
-    url: "/about",
+    url: "http://www.alexdev.cl/about",
     description: "Acá conoceras la información más relevante sobre mi, estudios, experiencia laboral, cursos y otras aptitudes",
     image: "https://res.cloudinary.com/dz3zwotvp/image/upload/v1679340727/Portfolio/RSSimage.png"
   }

@@ -9,7 +9,7 @@ export default function Portfolio() {
   const metaTag = {
     title: "Mi Portafolio - Proyectos",
     siteName: "Mi Portafolio",
-    url: "/portfolio",
+    url: "http://www.alexdev.cl/portfolio",
     description: "Mis proyectos realizados con diferentes tecnologías, no dudes en consultarlos, visitarlos o ver si código, asi sabras que te puedo ayudar en el desarrollo de tus páginas",
     image: "https://res.cloudinary.com/dz3zwotvp/image/upload/v1679340727/Portfolio/RSSimage.png"
   }

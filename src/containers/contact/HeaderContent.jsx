@@ -18,7 +18,7 @@ export default function HeaderContent() {
         <p>¡Gracias por visitar mi portafolio! Si estás interesado en mi trabajo o tienes alguna pregunta, no dudes en ponerte en contacto conmigo. Estaré encantado de escuchar tus comentarios, responder a tus preguntas y discutir cualquier proyecto que tengas en mente. Puedes comunicarte conmigo a través del siguiente formulario o de cualquiera de mis redes sociales. ¡Espero tener noticias tuyas pronto!</p>
       </div>
       <div className='Contact_Header__Image'>
-        <AdvancedImage style={{ maxWidth: '400px' }} cldImg={image} alt='Imagen de personas colaborando' plugins={[responsive(), placeholder()]} />
+        <AdvancedImage style={{ maxWidth: '400px', width: '100%' }} cldImg={image} alt='Imagen de personas colaborando' plugins={[responsive(), placeholder()]} />
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ export default function Home() {
   const metaTag = {
     title: "Mi Portafolio - Home",
     siteName: "Mi Portafolio",
-    url: "/",
+    url: "http://www.alexdev.cl/",
     description: "¿Buscas un desarrollador web front-end especializado en React? Entra en mi página web y descubre mis proyectos, quien soy y en que te puedo ayudar. ¡Contactame sin compromiso!",
     image: "https://res.cloudinary.com/dz3zwotvp/image/upload/v1679340727/Portfolio/RSSimage.png"
   }

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
 import { useObserver } from '../../hooks/useObserver';
 import LoaderEmail from '../../components/LoaderEmail';
+import logo from '../../assets/images/logo.png'
 import '../../styles/contact/Form.scss'
 
 export default function Form() {
@@ -44,6 +45,10 @@ export default function Form() {
 
   return (
     <div className={`Contact_Container ${animation}`} ref={animationRef}>
+      <div className='Contact_Container__Image'>
+        <img src={logo} alt="logo" width='300px' />
+        <LoaderEmail status={sendingEmail} />
+      </div>
       <form ref={form} className='Contact_Form' onSubmit={sendEmail}>
         <div className='Form_input'>
           <input id="name" type='text' required={true} name="user_name" onChange={handleChange} />
@@ -59,7 +64,7 @@ export default function Form() {
         </div>
         <button type='submit'>Enviar</button>
       </form>
-      <LoaderEmail status={sendingEmail} />
+
     </div>
   )
 }
