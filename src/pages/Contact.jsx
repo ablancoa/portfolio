@@ -7,11 +7,10 @@ import Form from '../containers/contact/Form';
 
 export default function Contact() {
   const metaTag = {
-    title: "Mi Portafolio - Contactame",
-    siteName: "Mi Portafolio",
+    title: "AlexDev - Contactame",
+    siteName: "AlexDev",
     url: "http://www.alexdev.cl/contact",
     description: "Ponte en contacto conmigo, dejame saber si quieres que trabajemos juntos, duda o sugerencias que desees. Estaré atento ¡Contactame sin compromiso!",
-    image: "https://res.cloudinary.com/dz3zwotvp/image/upload/v1679340727/Portfolio/RSSimage.png"
   }
   return (
     <>

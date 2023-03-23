@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import cardImage from '../../public/logo192.png'
 
 export default function HelmetSEO({ title, siteName, url, description, image, }) {
   return (
@@ -14,7 +15,7 @@ export default function HelmetSEO({ title, siteName, url, description, image, })
       <meta name='twitter:image' content={image} />
       <meta name='og:title' content={siteName} />
       <meta name='og:description' content={description} />
-      <meta name='og:image' content={image} />
+      <meta name='og:image' content={cardImage} />
       <meta name='og:url' content={url} />
       <meta name='og:site_name' content={siteName} />
       <meta name='og:locale' content='es_ES' />

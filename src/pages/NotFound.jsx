@@ -9,7 +9,7 @@ export default function NotFound() {
   return (
     <>
       <Helmet>
-        <title>Mi Portafolio - Not Found</title>
+        <title>AlexDev - Not Found</title>
       </Helmet>
       <div className='NotFound'>
         <h1>Lo sentimos, la página que usted busca no existe</h1>
