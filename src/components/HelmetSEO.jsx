@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import cardImage from '../../public/logo192.png'
+import cardImage from '../assets/images/logo192.png'
 
 export default function HelmetSEO({ title, siteName, url, description, image, }) {
   return (
