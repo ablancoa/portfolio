@@ -11,14 +11,16 @@
     background: linear-gradient(315deg, #000000, #152341);
     box-shadow: -5px -5px 10px #080d18,
       5px 5px 10px #203562;
-    padding: 1rem;
     border: none;
     cursor: pointer;
+    display: flex;
 
     & a {
+      padding: 1rem;
       font-family: $font;
       text-decoration: none;
       color: $base-color;
+      width: 100%;
     }
 
     &:hover {
