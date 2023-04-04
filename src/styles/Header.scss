@@ -25,7 +25,7 @@
   .Header-crystal {
     position: absolute;
     border-radius: 50px;
-    background: linear-gradient(-254deg, $color5 20%, color2 98.79%);
+    // background: linear-gradient(-254deg, $color5 20%, $color2 98.79%);
     box-shadow: 10px 10px 60px $color5, -10px -10px 60px $color2;
     z-index: 0;
   }
@@ -34,7 +34,7 @@
     width: 300px;
     height: 300px;
     right: 70%;
-    rotate: -245deg;
+    transform: rotate(-245deg);
   }
 
   .second {
@@ -42,7 +42,7 @@
     height: 200px;
     left: 84%;
     bottom: -76px;
-    rotate: -198deg
+    transform: rotate(-198deg);
   }
 
   .third {
@@ -50,7 +50,7 @@
     height: 500px;
     left: 37%;
     top: -197px;
-    rotate: -306deg;
+    transform: rotate(-306deg);
   }
 
 
