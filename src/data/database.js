@@ -32,6 +32,7 @@ export const data = {
       description: `Versión del clásico juego del ahorcadito, este juego te permite jugar como usuario no registrado con palabreas ya predeterminadas o con palabras que el jugador indique en el momento. Para los usuarios registrados se le permite agregar palabras a una librería personal, la cual quedará registrada permanentemente, para ello se utilzó firebase como servicio de almacenamiento y la aplicación fue desplegada en GitHub Pages`,
       technology: ['HTML5', 'CSS3', 'JavaScript', 'Cloud-Firebase'],
       image: 'Ahorcado',
+      url: "https://ablancoa.github.io/juego-ahorcado-alura/"
     },
 
     {
@@ -40,6 +41,7 @@ export const data = {
       description: `Challenge No. 1 del Curso de Alura, el cual consistía en crear un encriptador que le permita al usuario pasar un mensaje y que esta página te lo encripte, también permite pasarle el mensaje encriptado para poder desencriptarlo`,
       technology: ['HTML5', 'CSS3', 'JavaScript'],
       image: 'Encriptador',
+      url: "https://ablancoa.github.io/AluraChallenge1-Encriptador/"
     }
   ]
 }
