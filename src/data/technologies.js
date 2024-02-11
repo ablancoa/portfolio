@@ -9,6 +9,10 @@ import tailwind from '../assets/images/tailwind.svg';
 import bootstrap from '../assets/images/bootstrap.svg';
 import visualStudio from '../assets/images/visual-studio.svg';
 import github from '../assets/images/github.svg';
+import typescript from '../assets/images/typescript.svg';
+import material from '../assets/images/material-ui.svg';
+import python from '../assets/images/python.svg';
+import nodejs from '../assets/images/nodejs.svg';
 
 
 export const technologies = {
@@ -65,6 +69,26 @@ export const technologies = {
       id: 11,
       name: "icon bootstrap",
       url: bootstrap
+    },
+    {
+      id: 12,
+      name: "icon typescript",
+      url: typescript
+    },
+    {
+      id: 13,
+      name: "icon material ui",
+      url: material
+    },
+    {
+      id: 14,
+      name: "icon python",
+      url: python
+    },
+    {
+      id: 15,
+      name: "icon nodejs",
+      url: nodejs
     }
   ]
 }
