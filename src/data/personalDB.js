@@ -25,6 +25,19 @@ export const personalData = {
   ],
   experience: [
     {
+      id: 0,
+      title: 'Especialista IT',
+      place: 'MSA Ingenieros',
+      periode: '05/2023-Actualidad',
+      activities: [
+        'Desarrollo de ChatBot con Inteligencia Artificial que se adaptan a las demandas de la organización y facilitan el desempeño de los empleados.',
+        'Desarrollo de plataforma para la creación de los proyectos de la empresa. Esta plataforma facilita el proceso de planificación, ejecución y seguimiento de los proyectos, así como la elaboración y gestión de las cotizaciones correspondientes. Mi objetivo era ofrecer una herramienta eficiente, flexible y segura que permita optimizar los recursos y satisfacer las necesidades de los trabajadores asi como optimizar los tiempos.',
+        'Creación y mantenimiento de una plataforma interna que permite gestionar y analizar los datos de los potenciales clientes.',
+        'Mantención del sitio web. Esto implica actualizar el contenido, corregir errores, mejorar la seguridad y optimizar el rendimiento.'
+      ],
+      country: 'Chile'
+    },
+    {
       id:1,
       title: 'Freelancer Proyecto de FONDART Regional',
       place: 'Autónomo',
@@ -129,11 +142,11 @@ export const personalData = {
       ability:'React Native.',
       level:5,
     },
-    // {
-    //   id:7,
-    //   ability:'Python.',
-    //   level:5,
-    // },
+    {
+      id:7,
+      ability:'Python.',
+      level:6,
+    },
     {
       id:8,
       ability:'Git y GitHub.',
