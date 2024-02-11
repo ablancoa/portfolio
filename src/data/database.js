@@ -1,6 +1,15 @@
 export const data = {
   data: [
     {
+      id: 0,
+      name: 'EconomyChat',
+      description: `Este es un proyecto de chat con inteligencia artificial, creado con Python, LLamaIndex, OpenAI y Gradio la que permite crear aplicaciones interactivas con facilidad. El objetivo de este proyecto es ofrecer una interfaz de chat donde se pueda realizar consultas a una base de datos personalizada enfocada en el análisis técnico de las acciones económicas. De esta manera, se puede obtener información relevante sobre que factores son importantes a la hora de analisar las tendencias, indicadores y las estrategias de inversión.`,
+      technology: ['Python', 'OpenAI API', 'Gradio', 'LLamaIndex'],
+      image: 'Chat',
+      url: `https://huggingface.co/spaces/kirito95/economy_app`
+
+    },
+    {
       id: 1,
       name: 'Avocado Store',
       description: `Proyecto creado mediante NextJS, framework de React, en él se simula el proceso de comprar en una tienda, maquetación de la página de productos, se puede agregar y quitar productos del carrito, ver detalles del producto, revisar la compra, además enviar la informacion de compra al vendedor mediante un email. 

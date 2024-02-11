@@ -17,7 +17,7 @@ export default function HeaderContent() {
     <>
       <div className={`Header-title ${animation}`} ref={imageContainer}>
         <h1>Hola, soy <div>Alexander Blanco</div></h1>
-        <p>“Soy un desarrollador web front-end apasionado por la creación de soluciones creativas y efectivas para proyectos en línea. Con experiencia en HTML, CSS, JavaScript y frameworks como React, React Next y React Native"</p>
+        <p>“Mi pasión es el desarrollo web full-stack y me encanta crear soluciones creativas y efectivas para proyectos en línea. Tengo conocimientos de HTML, CSS, JavaScript, NodeJS, ExpressJS, Python y frameworks como React, React Next y React Native. Me gusta estar al día con las últimas tendencias y tecnologías."</p>
         <Button iconComponent={SendRoundedIcon} text={`Contáctame`} urlToGo={`/contact`} />
       </div>
       <div className={`Header-image`} >
